@@ -1,3 +1,7 @@
+import chromadb
+import google.genai
+import time
+
 chroma_client = chromadb.PersistentClient(path="chroma_persistent_storage")
 collection = chroma_client.get_or_create_collection(
     name="document_qa_collection"
